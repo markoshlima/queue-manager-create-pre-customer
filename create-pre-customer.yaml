@@ -15,7 +15,7 @@ Resources:
         validação para o usuário
       MemorySize: 128
       Timeout: 3
-      Role: 'arn:aws:iam::297738258633:role/LambdaFunctionsRole'
+      Role: ''
       Events:
         SQS1:
           Type: SQS
@@ -41,10 +41,10 @@ Resources:
           - subnet-0b5901f76345dc1a8
       Environment:
         Variables:
-          EMAIL_SENDER: 'https://sqs.sa-east-1.amazonaws.com/297738258633/email-sender'
+          EMAIL_SENDER: ''
           TABLE_NAME: pre-customer
       Layers:
-        - 'arn:aws:lambda:sa-east-1:297738258633:layer:utils:20'
+        - ''
   SQSQueue1:
     Type: 'AWS::SQS::Queue'
     Properties: {}

@@ -9,7 +9,9 @@ from utils import ssmutils
 
 def lambda_handler(event, context):
 
-    urlValidacao = 'http://d30b9dqnme0qm0.cloudfront.net/validate/'
+	cloudfrontURL = 'http://d30b9dqnme0qm0.cloudfront.net'
+
+    urlValidacao = cloudfrontURL+'/validate/'
 
     customer = json.loads(event['Records'][0]['body'])
     
