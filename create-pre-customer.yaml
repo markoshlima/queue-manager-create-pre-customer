@@ -35,10 +35,9 @@ Resources:
             BatchSize: 10
       VpcConfig:
         SecurityGroupIds:
-          - sg-03ed5bdb6048d0544
+          - 
         SubnetIds:
-          - subnet-0448a35c96f4a061f
-          - subnet-0b5901f76345dc1a8
+          - 
       Environment:
         Variables:
           EMAIL_SENDER: ''
